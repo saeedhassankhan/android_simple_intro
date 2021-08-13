@@ -37,7 +37,7 @@ public class ScreenSlidePagerActivity extends FragmentActivity {
 
         tabIndicator = findViewById(R.id.tabIndicator);
         viewPager.setAdapter(pagerAdapter);
-        viewPager.setPageTransformer(new ZoomOutPageTransformer());
+        viewPager.setPageTransformer(new PageTransformer());
         new TabLayoutMediator(tabIndicator , viewPager , (tab , position) -> {}).attach();
     }
 
